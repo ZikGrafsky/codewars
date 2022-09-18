@@ -2,7 +2,7 @@
 // Created by grafsky on 9/13/22.
 //
 #include <iostream>
-#include <experimental/random>
+#include <experimental/random>//for test case
 using namespace std;
 
 
@@ -18,54 +18,48 @@ struct ListNode {
 class Solution {
 public:
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
-        ListNode *ret, *l1ptr, *l2ptr, *retptr;
+        ListNode *ret, *retptr;
         ret = new ListNode(0);
         retptr = ret;
-        l1ptr = l1;
-        l2ptr = l2;
         while (true){
-            cout << l1ptr->val << " | " << l2ptr->val << endl;
             retptr->next = new ListNode(0);
-            if ((l1ptr->val + l2ptr->val + retptr->val) > 9){
-                retptr->next->val = l1ptr->val + l2ptr->val + retptr->val - 9;
-                retptr->val = 9;
+            if ((l1->val + l2->val + retptr->val) > 9){
+                retptr->val = (l1->val + l2->val + retptr->val) % 10;
+                retptr->next->val = 1;
             } else
-                retptr->val = (l1ptr->val + l2ptr->val + retptr->val);
+                retptr->val = (l1->val + l2->val + retptr->val);
+            if (l2->next == nullptr && l1->next == nullptr) {
+                if (retptr->next->val == 0)
+                    retptr->next = nullptr;
+                break;
+            }
             retptr = retptr->next;
-
-            if (l2ptr->next == nullptr && l1ptr->next == nullptr) break;
-
-            l1ptr->next == nullptr ? l1ptr = new ListNode(0) : l1ptr = l1ptr->next;
-            l2ptr->next == nullptr ? l2ptr = new ListNode(0) : l2ptr = l2ptr->next;
+            l1->next == nullptr ? l1 = new ListNode(0) : l1 = l1->next;
+            l2->next == nullptr ? l2 = new ListNode(0) : l2 = l2->next;
         }
         return ret;
     }
 };
 
 int main(){
-    Solution* kek = new Solution();
+    Solution* test_case = new Solution();
     ListNode* tmp;
-    ListNode* list= new ListNode(1, nullptr);
-    ListNode* list1= new ListNode(1, nullptr);
+    ListNode* list= new ListNode(std::experimental::randint(0, 9), nullptr);
+    ListNode* list1= new ListNode(std::experimental::randint(0, 9), nullptr);
     tmp = list;
-    for (int i = 2; i <= 15; ++i) {
+    for (int i = 2; i <= 3; ++i) {
         tmp->next = new ListNode(std::experimental::randint(0, 9), nullptr);
         tmp = tmp->next;
     }
     tmp = list1;
-    for (int i = 2; i <= 10; ++i) {
+    for (int i = 2; i <= 3; ++i) {
         tmp->next = new ListNode(std::experimental::randint(0, 9), nullptr);
         tmp = tmp->next;
     }
-//    tmp = list;
-//    while (tmp->next != NULL){
-//        cout << tmp->val << endl;
-//        tmp = tmp->next;
-//    }
-//    cout << "_________________\n";
-    tmp = kek->addTwoNumbers(list, list1);
+    tmp = test_case->addTwoNumbers(list, list1);
     while (tmp->next != NULL){
         cout << tmp->val;
         tmp = tmp->next;
     }
+    cout << tmp->val;
 }
