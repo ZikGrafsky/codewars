@@ -13,7 +13,7 @@ int countOdds_if_cond(int low, int high) {
 }
 
 int countOdds_ternary(int low, int high) {
-    return (low % 2 != 0 && high % 2 != 0) ? (high - low + 1) / 2 + 1 : (high - low + 1) / 2;
+    return (low % 2 != 0 && high % 2 != 0) ? ((high - low + 1) / 2 + 1) : ((high - low + 1) / 2);
 }
 
 int main(){
