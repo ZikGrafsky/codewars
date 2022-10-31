@@ -1,4 +1,4 @@
-"Happy Number" exercise from leetcode.
+"Count Odd Numbers in an Interval Range" exercise from leetcode.
 
 Compile: clang++ -std=c++17 Solution.cpp
 
