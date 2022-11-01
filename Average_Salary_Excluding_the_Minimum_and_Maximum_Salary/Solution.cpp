@@ -4,6 +4,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include "time.h"
 
 using namespace std;
 
@@ -31,7 +32,11 @@ double average(vector<int>& salary) {
 }
 
 int main(){
+    clock_t time;
     vector<int> tmp {4000,3000,1000,2000};
-    cout << average(tmp);
+    time = clock();
+    cout << "Without algo: " << average(tmp) << " time: " << (clock() - time/CLOCKS_PER_SEC) << endl;
+    time = clock();
+    cout << "With algo: " << average_with_algorithm(tmp) << " time: " << (clock() - time/CLOCKS_PER_SEC) << endl;
     return 0;
 }
