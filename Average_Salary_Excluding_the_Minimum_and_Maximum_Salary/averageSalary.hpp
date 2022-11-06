@@ -1,5 +1,5 @@
 //
-// Created by grafsky on 10/31/22.
+// Created by grafsky on 11/6/22.
 //
 #include <iostream>
 #include <vector>
@@ -29,14 +29,4 @@ double average(vector<int>& salary) {
         result += (double) *it;
     }
     return ((result - (max + min)) / (salary.size() - 2));
-}
-
-int main(){
-    clock_t time;
-    vector<int> tmp {4000,3000,1000,2000};
-    time = clock();
-    cout << "Without algo: " << average(tmp) << " time: " << (clock() - time/CLOCKS_PER_SEC) << endl;
-    time = clock();
-    cout << "With algo: " << average_with_algorithm(tmp) << " time: " << (clock() - time/CLOCKS_PER_SEC) << endl;
-    return 0;
 }

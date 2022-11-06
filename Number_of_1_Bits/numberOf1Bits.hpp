@@ -1,5 +1,5 @@
 //
-// Created by grafsky on 11/1/22.
+// Created by grafsky on 11/6/22.
 //
 #include <iostream>
 using namespace std;
@@ -11,10 +11,4 @@ int hammingWeight(uint32_t n) {
             res++;
     }
     return (int)res;
-}
-
-int main(){
-    cout << "res: " << hammingWeight(00000000000000000000000010000000) << endl;
-
-    return 0;
 }

@@ -1,6 +1,6 @@
 "Running Sum of 1d Array" exercise from leetcode.
 
-Compile: clang++ -std=c++17 Solution.cpp
+Compile: clang++ -std=c++17 main.cpp
 
 ![image](https://user-images.githubusercontent.com/80957111/198500658-2a4123fb-8edd-4fb7-a332-fecd79c07873.png)
 

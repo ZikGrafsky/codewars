@@ -1,6 +1,6 @@
 "Reverse Integer" exercise from leetcode.
 
-Compile: clang++ -std=c++17 Solution.cpp
+Compile: clang++ -std=c++17 main.cpp
 
 ![image](https://user-images.githubusercontent.com/80957111/200153232-5486a9a4-8004-4017-9337-cd474a727be9.png)
 

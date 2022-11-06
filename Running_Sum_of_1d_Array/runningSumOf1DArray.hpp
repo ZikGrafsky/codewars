@@ -1,5 +1,5 @@
 //
-// Created by grafsky on 10/28/22.
+// Created by grafsky on 11/6/22.
 //
 #include <iostream>
 #include <vector>
@@ -15,9 +15,3 @@ public:
         return nums;
     }
 };
-
-int main(){
-    vector<int> nums{13,4,6,23,8};
-    for(auto i: (new Solution())->runningSum(nums))
-    cout << i << "|";
-}

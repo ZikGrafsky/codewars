@@ -1,6 +1,6 @@
 "Move Zeroes" exercise from leetcode.
 
-Compile: clang++ -std=c++17 Solution.cpp
+Compile: clang++ -std=c++17 main.cpp
 
 ![image](https://user-images.githubusercontent.com/80957111/200104961-8b84650e-bd32-41be-9489-b1391115020b.png)
 

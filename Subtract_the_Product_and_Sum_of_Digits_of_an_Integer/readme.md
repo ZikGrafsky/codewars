@@ -1,6 +1,6 @@
 "Subtract the Product and Sum of Digits of an Integer" exercise from leetcode.
 
-Compile: clang++ -std=c++17 Solution.cpp
+Compile: clang++ -std=c++17 main.cpp
 
 ![image](https://user-images.githubusercontent.com/80957111/199148768-b2b55c2c-c0e4-4f54-8c6c-b733b2f169c0.png)
 

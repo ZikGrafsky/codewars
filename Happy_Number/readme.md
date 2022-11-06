@@ -1,6 +1,6 @@
 "Happy Number" exercise from leetcode.
 
-Compile: clang++ -std=c++17 Solution.cpp
+Compile: clang++ -std=c++17 main.cpp
 
 ![image](https://user-images.githubusercontent.com/80957111/198860609-d260fc85-b489-4ba9-8bf3-3ab4b0a1af2a.png)
 

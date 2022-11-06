@@ -1,6 +1,6 @@
 "Remove Element" exercise from leetcode.
 
-Compile: clang++ -std=c++17 Solution.cpp
+Compile: clang++ -std=c++17 main.cpp
 
 ![image](https://user-images.githubusercontent.com/80957111/199966301-5f2fca8a-6c24-4790-9a02-a932669d2a90.png)
 

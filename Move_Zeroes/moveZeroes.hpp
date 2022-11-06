@@ -1,5 +1,5 @@
 //
-// Created by grafsky on 9/13/22.
+// Created by grafsky on 11/6/22.
 //
 #include <iostream>
 #include <vector>
@@ -15,13 +15,4 @@ void moveZeroes(vector<int>& nums) {
         nums.push_back(0);
         it = std::find(it, nums.end() - i++, 0);
     }
-}
-
-int main(){
-    vector<int> tmp{0,1,0,3,12};
-    moveZeroes(tmp);
-    for (int i:tmp) {
-        cout << i << "|";
-    }
-    return 0;
 }

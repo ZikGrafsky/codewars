@@ -1,6 +1,6 @@
 "Count Odd Numbers in an Interval Range" exercise from leetcode.
 
-Compile: clang++ -std=c++17 Solution.cpp
+Compile: clang++ -std=c++17 main.cpp
 
 ![image](https://user-images.githubusercontent.com/80957111/198923950-12c15975-03f2-4d13-bab6-43b69f20410e.png)
 

@@ -14,12 +14,3 @@ int reverse(int x) {
     }
     return (i > INT_MAX || i < INT_MIN) ? 0 : i;
 }
-
-
-int main(){
-    cout << "res: " << reverse(-2143847412) << endl;
-    cout << "res: " << reverse(0) << endl;
-    cout << "res: " << reverse(1) << endl;
-    cout << "res: " << reverse(INT_MIN) << endl;
-    return 0;
-}

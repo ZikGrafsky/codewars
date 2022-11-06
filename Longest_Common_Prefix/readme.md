@@ -1,6 +1,6 @@
 "Longest Common Prefix" exercise from leetcode.
 
-Compile: clang++ -std=c++17 Solution.cpp
+Compile: clang++ -std=c++17 main.cpp
 
 ![image](https://user-images.githubusercontent.com/80957111/198864251-b6bbe41e-9da8-440d-bb52-2d91eeb87d7d.png)
 
